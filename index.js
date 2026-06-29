@@ -1,3 +1,4 @@
+/*
 const N = document.querySelector('#inp').value;
 const col = document.querySelector('#col');
 for(let n = 1;n <= N;n++){
@@ -33,3 +34,4 @@ function Collatz(N) {
     }
     return [Seq,Mer];
 }
+*/
