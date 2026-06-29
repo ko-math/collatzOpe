@@ -11,7 +11,7 @@ but.addEventListener('click',function(){
       if(arrays[1].includes(add)){
         arr += add;
       } else {
-        arr += '<b>' + add + '</b>';
+        arr += '<b style="color: red;">' + add + '</b>';
       }
       arr += ',';
     }
