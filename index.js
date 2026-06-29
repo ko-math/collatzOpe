@@ -32,7 +32,7 @@ function Collatz(N){
             n = (3 * n + 1) / 2;
         }
         Seq.push(n);
-        if(2 ** Math.ceil(Math.log2(n)) === n) Mer.push(n);
+        if(Math.ceil(Math.log2(n)) === Math.log2(n)) Mer.push(n);
     }
     return [Seq,Mer];
 }
