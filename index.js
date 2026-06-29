@@ -9,9 +9,9 @@ but.addEventListener('click',function(){
     for(let i = 0;i < arrays[0].length;i++){
       const add = arrays[0][i];
       if(arrays[1].includes(add)){
-        arr += add;
-      } else {
         arr += '<b style="color: red;">' + add + '</b>';
+      } else {
+        arr += add;
       }
       arr += ',';
     }
@@ -32,7 +32,7 @@ function Collatz(N){
             n = (3 * n + 1) / 2;
         }
         Seq.push(n);
-        if(Math.ceil(Math.log2(n)) === Math.log2(n)) Mer.push(n);
+        if(Math.ceil(Math.log2(n + 1)) === Math.log2(n + 1)) Mer.push(n);
     }
     return [Seq,Mer];
 }
